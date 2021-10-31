@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background: url(1.png);
+    background-repeat: contain;
+}
+.logo img {
+    display: block;
+    margin: auto;
+    margin-top: 62px;
+    width: 215px;
+    height: 215px;
+}
+.logo{
+    font-family: "Sniglet", cursive;
+    text-align: center;
+}
+.text {    
+    margin-top: 10px;    
+    margin-bottom: 0;
+    font-size: 64px;
+}
+.logo .subtext {
+    margin-top: 0;
+    font-size: 24px;
+    color: #938888;
+}
+.forms .fill {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;    
+    width: 317px;
+    height: 66px;
+    border: 1px solid rgba(128, 128, 128, 0.582);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.buttons {
+    text-align: center;
+}
+.signin {
+    display: block;
+    width: 317px;
+    height: 66px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: rgb(0, 168, 45);
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 61px;
+    margin-bottom: 17px;
+    transition: 0.4s ease-in-out;
+}
+.signin:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #07cf3d;
+}
+.or {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.or .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #898787;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.or .line {
+    margin-top: 15px;
+    width: 138px;
+    height: 0px;
+    border: 1px solid #898787;
+}
+.alt {
+    margin-top: 17px;
+    width: 317px;
+    height: 66px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b4b4b4;
+    transition: 0.3s ease-in-out;
+}
+.alt:hover {
+    background-color: #918f8f
+}
+.alt img {
+    width: 18px;
+    height: 18px;
+}
+.gtext {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}

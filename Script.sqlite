@@ -9,9 +9,11 @@ create table note (
     id integer primary key not null,
     name text(45) not null,
     text text,
+    rfname varchar(255),
     create_time default  current_timestamp,
     update_time default current_timestamp,
-    user_id integer
+    user_id integer,
+    FOREIGN KEY(user_id) REFERENCES user(id)
 );
 
 create table tag (
@@ -21,5 +23,7 @@ create table tag (
 
 create table note_tags (
     tag_id integer not null,
-    note_id integer not null
+    note_id integer not null,
+    FOREIGN KEY(tag_id) REFERENCES tag(id),
+    FOREIGN KEY(note_id) REFERENCES note(id)
 );

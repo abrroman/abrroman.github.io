@@ -1,0 +1,25 @@
+create table user (
+    id integer primary key not null,
+    email text(255) not null ,
+    password text(255) not null,
+    create_time default current_timestamp
+);
+
+create table note (
+    id integer primary key not null,
+    name text(45) not null,
+    text text,
+    create_time default  current_timestamp,
+    update_time default current_timestamp,
+    user_id integer
+);
+
+create table tag (
+    id integer primary key,
+    name_tag text(45)
+);
+
+create table note_tags (
+    tag_id integer not null,
+    note_id integer not null
+);
